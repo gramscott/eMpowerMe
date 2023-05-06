@@ -1,6 +1,5 @@
 package com.final_project.EmpwrMe.controller;
 
-
 import com.final_project.EmpwrMe.models.Diary;
 import com.final_project.EmpwrMe.repositories.DiaryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,14 +8,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
 @RestController
 public class DiaryController {
 
-
     @Autowired
     DiaryRepository diaryRepository;
-
 
     @GetMapping(value = "/diaries")
     public ResponseEntity<List<Diary>> getAllDiaries(){
@@ -29,7 +25,7 @@ public class DiaryController {
     }
 
     @PostMapping(value = "/diaries")
-    public ResponseEntity<Diary> postDiary(@PathVariable Diary diary){
+    public ResponseEntity<Diary> postDiary(@RequestBody Diary diary){
         diaryRepository.save(diary);
         return new ResponseEntity<>(diary, HttpStatus.CREATED);
     }
@@ -41,12 +37,13 @@ public class DiaryController {
     }
 
     @PatchMapping(value = "/diaries/{id}")
-    public ResponseEntity<Diary> updatePartialDiary(@RequestBody Diary diary) {
+    public ResponseEntity<Diary> updatePartialDiary(@RequestBody Diary diary){
         diaryRepository.save(diary);
         return new ResponseEntity<>(diary, HttpStatus.OK);
     }
+
     @DeleteMapping(value = "/diaries/{id}")
-    public ResponseEntity<Diary> deleteDiary(@PathVariable Long id) {
+    public ResponseEntity<Diary> deleteDiary(@PathVariable Long id){
         Diary found = diaryRepository.getOne(id);
         diaryRepository.delete(found);
         return new ResponseEntity<>(null, HttpStatus.OK);
