@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e23addd8-db6d-4877-97dc-92f83da39280" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/controller/AffirmationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/controller/DiaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Affirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Diary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/repositories/AffirmationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/repositories/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/repositories/DiaryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/node_modules/.package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/node_modules/node.js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/node_modules/node.js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/EmpwrMeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/components/DataLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/controller/AffirmationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/controller/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/controller/DiaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/models/Affirmation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/models/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/models/Diary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/repositories/AffirmationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/repositories/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/java/com/final_project/EmpwrMe/repositories/DiaryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpwrMe/src/test/java/com/final_project/EmpwrMe/EmpwrMeApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PeEaQyXj8SCIV3b0amvVW3Q6ZF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e23addd8-db6d-4877-97dc-92f83da39280" name="Changes" comment="" />
+      <created>1683809209443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683809209443</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java$EmpowerMeApplication.ic" NAME="EmpowerMeApplication Coverage Results" MODIFIED="1683809407076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.capstone.EmpowerMe.*</FILTER>
+    </SUITE>
+  </component>
+</project>
