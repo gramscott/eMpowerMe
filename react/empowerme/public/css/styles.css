@@ -1,0 +1,200 @@
+/* Also the categories structure */
+.component {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  list-style: none;
+}
+
+/* delete button */
+.category-delete {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
+
+.affirmation-select {
+  height : 150px;
+  margin: 50px;
+}
+
+
+.affirmation-placeholder {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
+
+.rating-placeholder {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
+
+.dropdown-select {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
+
+.save-rating {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
+
+.delete-button-comments {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
+
+
+/* Add category */
+.add-category{
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%; */
+}
+
+/* Affirmation header */
+.affirmation-select h1 {
+  margin-right: auto;
+}
+
+/* Category name */
+.category-name{
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+}
+
+/* Add category button */
+.category-button{
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
+
+/* category list/Add category*/
+ul.component-list {
+  display: flex;                    
+  flex-wrap: wrap;
+  /* align-items: space-around; */
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+
+/* Nav links */
+.navLink {
+  display: inline;
+  font-size: larger; 
+  border-bottom: black;
+}
+
+/* Affirmation once selected*/
+#root {
+  margin-top: 80px;
+  color: blue;
+  font-size: larger;
+  padding: 10px;
+}
+
+/* Nav bar */
+header {
+    position: fixed;
+    font-family: 'Arial, Times New Roman, Courier, and Helvetica';
+    border-bottom: '2px solid black';
+    background-color: whitesmoke;
+    top: 0;
+    padding: 0%;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+/* logo */
+header img {
+  height: 80px;
+  margin-left: 40px;
+}
+
+/* Nav links structure */
+header li {
+    margin: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* Affirmation Header */
+a {
+    color: blue;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.category-link {
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+
+}
+
+.delete-comment{
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  color: blue;
+}
