@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EmpwrMe.iml" filepath="$PROJECT_DIR$/.idea/modules/EmpwrMe.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EmpwrMe.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EmpwrMe.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EmpwrMe.test.iml" filepath="$PROJECT_DIR$/.idea/modules/EmpwrMe.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EmpowerMe/EmpowerMe.iml" filepath="$PROJECT_DIR$/EmpowerMe/EmpowerMe.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
     </modules>
   </component>
