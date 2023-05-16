@@ -1,5 +1,5 @@
-import React, {Fragment, useEffect, useState} from 'react';
-import { BrowserRouter as Router, Route, Routes, useParams, Switch } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from '../NavBar.js';
 import AffirmationContainer from './AffirmationContainer.js';
 import CategoryContainer from './CategoryContainer.js';
