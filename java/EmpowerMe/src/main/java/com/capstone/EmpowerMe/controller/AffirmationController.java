@@ -19,16 +19,19 @@ public class AffirmationController {
 
     @GetMapping(value = "/affirmations")
     public ResponseEntity<List<Affirmation>> getAllAffirmations(){
+        System.out.println("Received request to return all affirmations");
         return new ResponseEntity<>(affirmationRepository.findAll(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/affirmations/{id}")
     public ResponseEntity getAffirmation(@PathVariable Long id){
+        System.out.println("Received request to return Affirmation with id: " + id);
         return new ResponseEntity<>(affirmationRepository.findById(id), HttpStatus.OK);
     }
 
     @PostMapping(value = "/affirmations")
     public ResponseEntity<Affirmation> postAffirmation(@RequestBody Affirmation affirmation){
+        System.out.println("Received request to create new affirmation, with details: " + affirmation.toString());
         affirmationRepository.save(affirmation);
         return new ResponseEntity<>(affirmation, HttpStatus.CREATED);
     }

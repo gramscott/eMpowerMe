@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 
-const DiaryForm = ({ categories, onCreate }) => {
+const AffirmationForm = ({ categories, onCreate }) => {
   const [stateDiary, setStateDiary] = useState({
     title: '',
     category: null,
@@ -14,6 +14,7 @@ const DiaryForm = ({ categories, onCreate }) => {
     let propertyName = event.target.name;
     let copiedDiary = { ...stateDiary };
     copiedDiary[propertyName] = event.target.value;
+    console.log('copied diary: ' + copiedDiary)
     setStateDiary(copiedDiary);
   };
 
@@ -70,4 +71,4 @@ const DiaryForm = ({ categories, onCreate }) => {
   );
 };
 
-export default DiaryForm;
+export default AffirmationForm;

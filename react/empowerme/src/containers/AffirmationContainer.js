@@ -4,7 +4,6 @@ import AffirmationForm from '../components/affirmations/AffirmationForm';
 import AffirmationDetail from '../components/affirmations/AffirmationDetail';
 import AffirmationList from '../components/affirmations/AffirmationList';
 import Request from '../helpers/request';
-import DiaryForm from '../components/affirmations/AffirmationForm';
 
 const AffirmationContainer = () => {
     
@@ -22,6 +21,7 @@ const AffirmationContainer = () => {
         Promise.all([affirmationPromise, categoryPromise, diaryPromise])
         .then((data) => {
             console.log(data);
+            console.log('data 0: ' + data[0][0].sentence)
             setAffirmations(data[0])
             setCategories(data[1])
             setDiaries(data[2])
@@ -33,6 +33,7 @@ const AffirmationContainer = () => {
         const request = new Request()
         request.get("/api/affirmations")
         .then((data) => {
+          console.log('data in getAffirmations: ' + data)
           setAffirmations(data)
         })
       }
@@ -75,7 +76,7 @@ const AffirmationContainer = () => {
         <Route path="/:id" element={
             <AffirmationDetailWrapper/>
         }/>
-        <Route path="/" element={<AffirmationList affirmations={affirmations} handlePost={handlePost}/>}/>
+        <Route path="/" element={<AffirmationList affirmations={affirmations} categories={categories} handlePost={handlePost}/>}/>
     </Routes>
 </div>
 

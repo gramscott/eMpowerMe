@@ -1,7 +1,7 @@
 class Request {
 
     async get(url){
-        const res = await fetch(url);
+        const res = await fetch("http://localhost:8080"+url);
         return res.json();
     }
 

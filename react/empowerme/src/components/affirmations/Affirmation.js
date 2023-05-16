@@ -1,43 +1,47 @@
-import React from 'react';
-import Affirmation from './Affirmation.js';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import AffirmationForm from './AffirmationForm.js';
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import DiaryForm from '../diaries/DiaryForm';
 
 
-const AffirmationList = ({affirmations, categories, diaries, handlePost, handleDiaryPost}) => {
+const Affirmation = ({ affirmation, diaries, handlePost }) => {
+  if (!affirmation) {
+    return 'Loading...';
+  }
 
-    if (affirmations.length ===0){
-        return (<p>Loading...</p>)
-    }
+  const url = '/affirmations/' + affirmation.id;
 
-    const affirmationElements = affirmations.map((affirmation, index) => {
-        return (
-            <div key = {index}>
-                <Affirmation affirmation={affirmation} />
-            </div>
-        )
-      
-    })
+  const myStyle = {
+    fontFamily: 'Arial, sans-serif',
+    backgroundColor: 'white',
+    top: 0,
+    left: 0,
+    right: 0,
+    border: '5px solid black',
+    height: '80p%',
+    display: 'flex',
+    alignItems: 'center',
+  };
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
 
-    return (
-        <div className='Slides'>
-            <Slider {...settings}>
-                {affirmationElements} 
-            </Slider>
-            <br/>
-            <AffirmationForm affirmations={affirmations} categories={categories} diaries={diaries} onCreate={handlePost} onDiaryCreate={handleDiaryPost}/>
-        </div>
-    );
-}
+  return (
+    <div>
+    <Fragment>
+    <div className='affirmation-select' style={myStyle}>
+      <h1>
+        <Link to={url}>
+          {affirmation.category.name}
+        </Link>
+      </h1>
+     
+      <div className='affirmation-text'>
+      <p>
+        {affirmation.title} 
+      </p>
+      </div>
+    </div>
+    </Fragment>
+    </div>
+  );
+};
 
-export default AffirmationList;
+export default Affirmation;

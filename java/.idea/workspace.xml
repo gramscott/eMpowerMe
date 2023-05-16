@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e23addd8-db6d-4877-97dc-92f83da39280" name="Changes" comment="Just the connection left to catch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/controller/AffirmationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/controller/AffirmationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/Affirmation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/Affirmation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/containers/AffirmationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/containers/AffirmationContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/helpers/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/helpers/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +88,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Just the connection left to catch" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java$EmpowerMeApplication.ic" NAME="EmpowerMeApplication Coverage Results" MODIFIED="1683809407076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/java$EmpowerMeApplication.ic" NAME="EmpowerMeApplication Coverage Results" MODIFIED="1683965373479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.capstone.EmpowerMe.*</FILTER>
     </SUITE>
   </component>
