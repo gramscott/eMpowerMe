@@ -65,7 +65,7 @@ const CategoryContainer = () => {
     <div>
         <Routes>
             <Route path="/" element={
-                <CategoryList categories={categories} handlePost={handlePost}/>
+                <CategoryList categories={categories} affirmations={affirmations} handlePost={handlePost}/>
             }/>
             <Route path="/:id" element={
                 <CategoryDetailWrapper/>

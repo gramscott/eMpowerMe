@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23addd8-db6d-4877-97dc-92f83da39280" name="Changes" comment="Just the connection left to catch">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/controller/AffirmationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/controller/AffirmationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/Affirmation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/Affirmation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/containers/AffirmationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/containers/AffirmationContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/helpers/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/helpers/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

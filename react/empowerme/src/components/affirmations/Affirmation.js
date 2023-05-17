@@ -29,13 +29,13 @@ const Affirmation = ({ affirmation, diaries, handlePost }) => {
     <div className='affirmation-select' style={myStyle}>
       <h1>
         <Link to={url}>
-          {affirmation.category.name}
+          {affirmation.category.title}
         </Link>
       </h1>
      
       <div className='affirmation-text'>
       <p>
-        {affirmation.title} 
+        {affirmation.sentence} 
       </p>
       </div>
     </div>

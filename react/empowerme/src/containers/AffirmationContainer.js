@@ -1,5 +1,5 @@
-import React, { Component, Fragment, useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Routes, useParams } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useParams } from "react-router-dom";
 import AffirmationForm from '../components/affirmations/AffirmationForm';
 import AffirmationDetail from '../components/affirmations/AffirmationDetail';
 import AffirmationList from '../components/affirmations/AffirmationList';
@@ -20,8 +20,9 @@ const AffirmationContainer = () => {
         
         Promise.all([affirmationPromise, categoryPromise, diaryPromise])
         .then((data) => {
-            console.log(data);
             console.log('data 0: ' + data[0][0].sentence)
+            console.log('data 1: ' + data[1][1].title)
+            console.log('data 2: ' + data[2][2].post)
             setAffirmations(data[0])
             setCategories(data[1])
             setDiaries(data[2])
@@ -33,16 +34,16 @@ const AffirmationContainer = () => {
         const request = new Request()
         request.get("/api/affirmations")
         .then((data) => {
-          console.log('data in getAffirmations: ' + data)
           setAffirmations(data)
         })
       }
   
       const findAffirmationById = (id) => {
+        console.log('Received id:', id);
         return affirmations.find((affirmation) => {
-          return affirmation.id === parseInt(id);
-        })
-      }
+            return affirmation.id === parseInt(id);
+        });
+    };
   
       const AffirmationDetailWrapper = () => {
         const { id } = useParams();
@@ -76,7 +77,7 @@ const AffirmationContainer = () => {
         <Route path="/:id" element={
             <AffirmationDetailWrapper/>
         }/>
-        <Route path="/" element={<AffirmationList affirmations={affirmations} categories={categories} handlePost={handlePost}/>}/>
+        <Route path="/" element={<AffirmationList affirmations={affirmations} categories={categories} diaries={diaries} handlePost={handlePost}/>}/>
     </Routes>
 </div>
 

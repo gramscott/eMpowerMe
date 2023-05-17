@@ -13,7 +13,7 @@ const Category = ({category}) => {
     <Fragment>
         <p>
             <Link to={url} className='name'>
-            {category.name}
+            {category.title}
             </Link>
         </p>
     </Fragment>

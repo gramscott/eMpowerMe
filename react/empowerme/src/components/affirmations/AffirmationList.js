@@ -13,7 +13,7 @@ const AffirmationList = ({affirmations, categories, diaries, handlePost, handleF
     }
 
     const affirmationElements = affirmations.map((affirmation, index) => {
-      console.log('affirmation elements in AffirmationList: ' + affirmation.sentence);
+      // console.log('affirmation elements in AffirmationList: ' + affirmation.sentence);
         return (
             <div key = {index}>
                 <Affirmation affirmation={affirmation} />

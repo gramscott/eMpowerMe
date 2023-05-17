@@ -4,7 +4,7 @@ const DiaryForm = ({onCreate}) => {
 
     const [stateDiary, setStateDiary] = useState(
         {
-            entry:""
+            post:"",
         }
     )
 
@@ -23,7 +23,7 @@ const DiaryForm = ({onCreate}) => {
     return (
     <div>
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Entry" name="entry" onChange={handleChange} value={stateDiary.entry}/>
+            <input type="text" placeholder="Entry" name="post" onChange={handleChange} value={stateDiary.post}/>
             <button type="Submit" >Save Entry</button>
         </form>
     </div>

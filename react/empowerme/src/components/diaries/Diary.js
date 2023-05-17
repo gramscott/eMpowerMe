@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-const Diary = (props) => {
+const Diary = (prop) => {
 
   const myStyle = {
     fontFamily: 'Arial, sans-serif',
@@ -15,11 +15,11 @@ const Diary = (props) => {
     alignItems: 'center'
   };
   
-  if (!props.diary) {
+  if (!prop.diary) {
     return <p>Loading...</p>
   }
 
-  const url = "/diaries/" + props.diary.id
+  const url = "/diaries/" + prop.diary.id
 
   return (
     <Fragment>
@@ -27,7 +27,7 @@ const Diary = (props) => {
     <div style={myStyle}>
       <div className="component">
           <p className="name">
-            {props.diary.entry}
+            {prop.diary.post}
           </p>
       </div>
     </div>

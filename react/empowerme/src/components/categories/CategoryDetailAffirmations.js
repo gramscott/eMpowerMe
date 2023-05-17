@@ -25,7 +25,7 @@ const CategoryDetailAffirmations = ({category, affirmations}) => {
     <Fragment>
         <p>
             <Link to={url} className='category-link'>
-            Category: {category.name}
+            Category: {category.title}
             </Link>
             {affirmationElements}
         </p>

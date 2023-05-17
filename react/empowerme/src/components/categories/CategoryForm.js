@@ -4,7 +4,7 @@ const CategoryForm = ({onCreate}) => {
     
     const [stateCategory, setStateCategory] = useState(
         {
-            name:""
+            title:""
         }
     )
 
@@ -24,7 +24,7 @@ const CategoryForm = ({onCreate}) => {
         <div>
         <form onSubmit={handleSubmit}>
     
-        <input type="text" className='category-name' placeholder="Category name" name="name" onChange={handleChange} value={stateCategory.name} />    
+        <input type="text" className='category-name' placeholder="Category name" name="title" onChange={handleChange} value={stateCategory.title} />    
         <button className='category-button' type="submit">Add New Category</button>
         </form>
         </div>
