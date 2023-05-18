@@ -23,8 +23,8 @@ const DiaryForm = ({onCreate}) => {
     return (
     <div>
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Entry" name="post" onChange={handleChange} value={stateDiary.post}/>
-            <button type="Submit" >Save Entry</button>
+            <input type="text" placeholder="Entry" className="diary-placeholder" onChange={handleChange} value={stateDiary.post}/>
+            <button className="diary-button" type="Submit" >Save Entry</button>
         </form>
     </div>
     )
