@@ -20,9 +20,9 @@ const AffirmationContainer = () => {
         
         Promise.all([affirmationPromise, categoryPromise, diaryPromise])
         .then((data) => {
-            console.log('data 0: ' + data[0][0].sentence)
-            console.log('data 1: ' + data[1][1].title)
-            console.log('data 2: ' + data[2][2].post)
+            // console.log('data 0: ' + data[0][0].sentence)
+            // console.log('data 1: ' + data[1][1].title)
+            // console.log('data 2: ' + data[2][2].post)
             setAffirmations(data[0])
             setCategories(data[1])
             setDiaries(data[2])
@@ -30,13 +30,13 @@ const AffirmationContainer = () => {
     }, [])
     
 
-    const getAffirmations = () => {
-        const request = new Request()
-        request.get("/api/affirmations")
-        .then((data) => {
-          setAffirmations(data)
-        })
-      }
+    // const getAffirmations = () => {
+    //     const request = new Request()
+    //     request.get("/api/affirmations")
+    //     .then((data) => {
+    //       setAffirmations(data)
+    //     })
+    //   }
   
       const findAffirmationById = (id) => {
         console.log('Received id:', id);
