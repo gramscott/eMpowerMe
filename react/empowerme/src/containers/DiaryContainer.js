@@ -26,14 +26,6 @@ const DiaryContainer = () => {
         })
     }, [])
 
-    // const getDiaries = () => {
-    //     const request = new Request()
-    //     request.get("/api/diaries")
-    //     .then((data) => {
-    //         setDiaries(data)
-    //     })
-    // }
-
     const findDiaryById = (id) => {
         return diaries.find((diary) => {
             return diary.id === parseInt(id);
@@ -65,6 +57,9 @@ const DiaryContainer = () => {
     <div>
 
         <Routes>
+        <Route path="/new" element={
+          <DiaryForm diaries={diaries} onCreate={handlePost}/>
+        }/>
             <Route path="/" element={
                 <DiaryList diaries={diaries} handlePost={handlePost}/>
             }/>

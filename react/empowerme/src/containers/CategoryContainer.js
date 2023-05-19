@@ -1,5 +1,5 @@
-import React, { Component, Fragment, useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Routes, useParams } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useParams } from "react-router-dom";
 import Request from '../helpers/request';
 import CategoryList from '../components/categories/CategoryList';
 import CategoryDetail from '../components/categories/CategoryDetail';
@@ -25,14 +25,6 @@ const CategoryContainer = () => {
             setDiaries(data[2])
         })
     }, [])
-
-    // const getCategories = () => {
-    //     const request = new Request()
-    //     request.get("/api/categories")
-    //     .then((data) => {
-    //         setCategories(data)
-    //     })
-    // }
 
     const findCategoriesById = (id) => {
         return categories.find((category) => {
@@ -64,6 +56,10 @@ const CategoryContainer = () => {
     return (
     <div>
         <Routes>
+
+        <Route path="/new" element={
+          <CategoryForm categories={categories} onCreate={handlePost}/>
+        }/>
             <Route path="/" element={
                 <CategoryList categories={categories} affirmations={affirmations} handlePost={handlePost}/>
             }/>

@@ -25,7 +25,3 @@ const DiaryList = (props, handlePost) => {
 }
 
 export default DiaryList;
-
-
-
-
