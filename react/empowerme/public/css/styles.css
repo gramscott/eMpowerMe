@@ -1,5 +1,5 @@
 /* Also the categories structure */
-.component {
+.a-particular-affirmations-comments {
   padding: 10px;
   font-size: xx-large;
   font-family: 'Arial, sans-serif';
@@ -43,6 +43,15 @@
 .affirmation-select {
   height : 150px;
   margin: 50px;
+  font-Family: Arial, sans-serif;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 5px solid black;
+  height: 80p%;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -76,7 +85,7 @@
   color: blue;
 }
 
-.save-rating {
+.save-new-affirmation {
   padding: 10px;
   font-size: xx-large;
   font-family: 'Arial, sans-serif';
@@ -143,6 +152,18 @@ ul.component-list {
   font-size: xx-large;
   list-style: none;
   justify-content: space-evenly;
+}
+
+.category-item {
+
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Arial, sans-serif';
+  background-color: white;
+  border: 5px solid black;
+  height: 80%;
+  list-style: none;
+
 }
 
 

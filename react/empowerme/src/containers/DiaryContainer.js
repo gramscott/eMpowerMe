@@ -26,6 +26,15 @@ const DiaryContainer = () => {
         })
     }, [])
 
+    const getDiaries = () => {
+        const request = new Request()
+        request.get("/api/diaries")
+        .then((data) => {
+            setDiaries(data)
+        })
+    }
+
+
     const findDiaryById = (id) => {
         return diaries.find((diary) => {
             return diary.id === parseInt(id);

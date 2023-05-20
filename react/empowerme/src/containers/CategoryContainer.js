@@ -26,6 +26,14 @@ const CategoryContainer = () => {
         })
     }, [])
 
+    const getCategories = () => {
+        const request = new Request()
+        request.get("/api/categories")
+        .then((data) => {
+            setCategories(data)
+        })
+    }
+
     const findCategoriesById = (id) => {
         return categories.find((category) => {
             return category.id === parseInt(id);

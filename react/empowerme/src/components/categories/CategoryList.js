@@ -10,8 +10,8 @@ if (categories.length ===0){
 
 const categoryElements = categories.map((category, index) => {
     return (
-        <li key={index} className='component-item'>
-            <div className='component'>
+        <li key={index} className='category-item'>
+            <div className='category-list'>
                 <Category category={category}/>
             </div>
         </li>

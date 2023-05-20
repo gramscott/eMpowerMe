@@ -6,14 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 import AffirmationForm from './AffirmationForm.js';
 
 
-const AffirmationList = ({affirmations, categories, diaries, handlePost, handleForumPost}) => {
+const AffirmationList = ({affirmations, categories, handlePost }) => {
 
     if (affirmations.length ===0){
         return (<p>Loading...</p>)
     }
 
     const affirmationElements = affirmations.map((affirmation, index) => {
-      // console.log('affirmation elements in AffirmationList: ' + affirmation.sentence);
         return (
             <div key = {index}>
                 <Affirmation affirmation={affirmation} />
@@ -31,15 +30,14 @@ const AffirmationList = ({affirmations, categories, diaries, handlePost, handleF
       };
 
 
-
-
 	return (
-        
-            <div className='Slides'>
+      
+            <div>
               <Slider {...settings}>
                 {affirmationElements} 
               </Slider>
               <br/>
+
               <AffirmationForm affirmations={affirmations} categories={categories} onCreate={handlePost}/>
             </div>
           );

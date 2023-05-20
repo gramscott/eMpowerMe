@@ -1,8 +1,7 @@
 import React from 'react';
 import Affirmation from './Affirmation';
-import DiaryForm from '../diaries/DiaryForm';
 
-const AffirmationDetail = ({affirmation, diaries, handleDelete, handleDiaryPost}) => {
+const AffirmationDetail = ({affirmation, handleDelete }) => {
 
     if(affirmation){
       
@@ -10,12 +9,13 @@ const AffirmationDetail = ({affirmation, diaries, handleDelete, handleDiaryPost}
             return <li key={index}>{diary.post}</li>
         })
 
+
         const onDelete = () => {
           handleDelete(affirmation.id)
         }
 
   return (
-    <div className='component'>
+    <div className='a-particular-affirmations-comments'>
         <Affirmation affirmation={affirmation}/>
         <p>Comments:</p>
         <ul>

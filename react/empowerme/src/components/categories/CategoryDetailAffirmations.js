@@ -13,8 +13,8 @@ const CategoryDetailAffirmations = ({category, affirmations}) => {
     const affirmationElements = affirmations.map((affirmation, index) => {
         if(affirmation.category.id === category.id){
         return (
-            <li key={index} className='component-item'>
-            <div className="component">
+            <li key={index} className='category-item'>
+            <div>
                 <Affirmation affirmation={affirmation}/>
             </div>
             </li>

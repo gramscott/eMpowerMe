@@ -1,5 +1,5 @@
 
-import React, {Fragment, useState} from 'react'
+import React, {useState} from 'react'
 
 const AffirmationForm = ({categories, onCreate}) => {
 
@@ -14,12 +14,14 @@ const AffirmationForm = ({categories, onCreate}) => {
     return <p>Loading... </p>
   }
 
+
   const handleChange = function(event){
     let propertyName = event.target.name;
     let copiedAffirmation = {...stateAffirmation}
     copiedAffirmation[propertyName] = event.target.value;
     setStateAffirmation(copiedAffirmation)
   }
+
 
   const handleCategory = function (event){
     const index = parseInt(event.target.value)
@@ -28,6 +30,7 @@ const AffirmationForm = ({categories, onCreate}) => {
     copiedAffirmation['category'] = selectedCategory; 
     setStateAffirmation(copiedAffirmation)
   }
+
 
   const handleSubmit = function(event){
     event.preventDefault();
@@ -51,7 +54,7 @@ const AffirmationForm = ({categories, onCreate}) => {
 
     </select>
 
-    <button type="submit" className='save-rating'>Save</button>
+    <button type="submit" className='save-new-affirmation'>Save</button>
     </form>
     </div>
 )

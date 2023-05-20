@@ -20,7 +20,7 @@ const images = [
 function App(){
   return(
     <Router>
-      <BackgroundSlideshow images={images} />
+      {/* <BackgroundSlideshow images={images} /> */}
       <MainContainer/>
       
     </Router>
