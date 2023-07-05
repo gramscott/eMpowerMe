@@ -1,6 +1,6 @@
 # eMpowerMe
 
-![Screenshot 2023-07-05 at 13 20 38](https://github.com/gramscott/eMpowerMe/assets/120787031/a0f0c447-6516-4b2a-a3eb-84daa56eb0e8)
+<img width="1468" alt="Screenshot 2023-07-05 at 13 28 41" src="https://github.com/gramscott/eMpowerMe/assets/120787031/6521317a-047d-4792-aa14-f6a1c435456f">
 
 </br>
 
