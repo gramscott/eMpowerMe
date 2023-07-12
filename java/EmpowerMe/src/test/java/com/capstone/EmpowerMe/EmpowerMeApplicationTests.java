@@ -151,6 +151,44 @@ class EmpwrMeApplicationTests {
 		assertEquals(expectedId, actualId);
 	}
 
+	@Test
+	public void affirmationCanDeleteDiary() {
+		Affirmation affirmation = new Affirmation();
+		affirmation.setDiaries(new ArrayList<>());
+
+		Diary diary = new Diary("Testing deleting diary");
+		affirmation.addDiary(diary);
+
+		List<Diary> initialDiaries = affirmation.getDiaries();
+		assertEquals(1, initialDiaries.size());
+		assertEquals(diary, initialDiaries.get(0));
+
+		affirmation.affirmationDeleteDiary(diary);
+
+		List<Diary> updatedDiaries = affirmation.getDiaries();
+		assertEquals(0, updatedDiaries.size());
+	}
+
+	@Test
+	public void categoryCanRemoveAffirmation(){
+		Category category = new Category("Your Journey");
+		category.setAffirmations(new ArrayList<>());
+
+		Affirmation affirmation = new Affirmation();
+		affirmation.setCategory(category);
+		category.addAffirmation(affirmation);
+
+		List <Affirmation> initialAffirmations = affirmation.getCategory().getAffirmations();
+		assertEquals(1, initialAffirmations.size());
+		assertEquals(affirmation, initialAffirmations.get(0));
+
+		category.categoryRemoveAffirmation(affirmation);
+
+		List <Affirmation> updatedAffirmations = category.getAffirmations();
+		assertEquals(0, updatedAffirmations.size());
+	}
+
+
 
 }
 

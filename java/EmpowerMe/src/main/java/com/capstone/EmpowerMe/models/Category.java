@@ -58,4 +58,9 @@ public class Category {
         this.affirmations.add(affirmation);
     }
 
+    public void categoryRemoveAffirmation(Affirmation affirmation){
+        this.affirmations.remove(affirmation);
+    }
+
+
 }

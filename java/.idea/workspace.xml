@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e23addd8-db6d-4877-97dc-92f83da39280" name="Changes" comment="Just the connection left to catch">
+    <list default="true" id="e23addd8-db6d-4877-97dc-92f83da39280" name="Changes" comment="More Tests implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Affirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Affirmation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmpowerMe/src/main/java/com/capstone/EmpowerMe/models/Diary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmpowerMe/src/test/java/com/capstone/EmpowerMe/EmpowerMeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmpowerMe/src/test/java/com/capstone/EmpowerMe/EmpowerMeApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +53,36 @@
       <recent name="com.capstone.EmpowerMe" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmpwrMeApplicationTests.canGetAffirmationId">
+  <component name="RunManager" selected="JUnit.EmpwrMeApplicationTests.categoryCanRemoveAffirmation">
+    <configuration name="EmpowerMeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpowerMeApplication" />
+      <module name="EmpowerMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpwrMeApplicationTests.affirmationCanDeleteDiary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmpowerMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
+      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
+      <option name="METHOD_NAME" value="affirmationCanDeleteDiary" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmpwrMeApplicationTests.canGetAffirmationId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmpowerMe" />
       <extension name="coverage">
@@ -83,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmpwrMeApplicationTests.canGetCategoryTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmpwrMeApplicationTests.categoryCanRemoveAffirmation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmpowerMe" />
       <extension name="coverage">
         <pattern>
@@ -93,39 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
       <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
-      <option name="METHOD_NAME" value="canGetCategoryTitle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmpwrMeApplicationTests.canGetDiaryId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EmpowerMe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
-      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
-      <option name="METHOD_NAME" value="canGetDiaryId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmpwrMeApplicationTests.canGetIdWhenNotSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EmpowerMe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
-      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
-      <option name="METHOD_NAME" value="canGetIdWhenNotSet" />
+      <option name="METHOD_NAME" value="categoryCanRemoveAffirmation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmpwrMeApplicationTests.categoryCanRemoveAffirmation" />
+        <item itemvalue="JUnit.EmpwrMeApplicationTests.affirmationCanDeleteDiary" />
         <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetAffirmationId" />
+        <item itemvalue="Application.EmpowerMeApplication" />
         <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetCategoryId" />
-        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetCategoryTitle" />
-        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetIdWhenNotSet" />
-        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetDiaryId" />
       </list>
     </recent_temporary>
   </component>
@@ -157,12 +157,31 @@
       <option name="project" value="LOCAL" />
       <updated>1683811328389</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="More Tests implemented">
+      <created>1689171316018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689171316018</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Just the connection left to catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just the connection left to catch" />
+    <MESSAGE value="More Tests implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="More Tests implemented" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java$EmpowerMeApplication.ic" NAME="EmpowerMeApplication Coverage Results" MODIFIED="1688826008815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

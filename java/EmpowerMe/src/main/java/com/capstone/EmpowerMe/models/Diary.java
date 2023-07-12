@@ -65,4 +65,5 @@ public class Diary {
     public void setId(Long id) {
         this.id = id;
     }
+
 }

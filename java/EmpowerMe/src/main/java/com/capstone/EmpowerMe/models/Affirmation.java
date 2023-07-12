@@ -82,4 +82,8 @@ public class Affirmation implements Serializable {
         this.diaries.add(diary);
     }
 
+    public void affirmationDeleteDiary(Diary diary){
+        this.diaries.remove(diary);
+    }
+
 }
