@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23addd8-db6d-4877-97dc-92f83da39280" name="Changes" comment="Just the connection left to catch">
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/components/affirmations/AffirmationList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react/empowerme/src/containers/AffirmationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react/empowerme/src/containers/AffirmationContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpowerMe/src/test/java/com/capstone/EmpowerMe/EmpowerMeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmpowerMe/src/test/java/com/capstone/EmpowerMe/EmpowerMeApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -38,9 +45,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="EmpowerMeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpowerMeApplication" />
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.capstone.EmpowerMe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EmpwrMeApplicationTests.canGetAffirmationId">
+    <configuration name="EmpwrMeApplicationTests.canGetAffirmationId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmpowerMe" />
       <extension name="coverage">
         <pattern>
@@ -48,13 +59,85 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
+      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
+      <option name="METHOD_NAME" value="canGetAffirmationId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpwrMeApplicationTests.canGetCategoryId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmpowerMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
+      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
+      <option name="METHOD_NAME" value="canGetCategoryId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpwrMeApplicationTests.canGetCategoryTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmpowerMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
+      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
+      <option name="METHOD_NAME" value="canGetCategoryTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpwrMeApplicationTests.canGetDiaryId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmpowerMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
+      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
+      <option name="METHOD_NAME" value="canGetDiaryId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpwrMeApplicationTests.canGetIdWhenNotSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmpowerMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.capstone.EmpowerMe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.capstone.EmpowerMe" />
+      <option name="MAIN_CLASS_NAME" value="com.capstone.EmpowerMe.EmpwrMeApplicationTests" />
+      <option name="METHOD_NAME" value="canGetIdWhenNotSet" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmpowerMeApplication" />
+        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetAffirmationId" />
+        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetCategoryId" />
+        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetCategoryTitle" />
+        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetIdWhenNotSet" />
+        <item itemvalue="JUnit.EmpwrMeApplicationTests.canGetDiaryId" />
       </list>
     </recent_temporary>
   </component>
@@ -82,8 +165,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Just the connection left to catch" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java$EmpowerMeApplication.ic" NAME="EmpowerMeApplication Coverage Results" MODIFIED="1683965373479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/java$EmpowerMeApplication.ic" NAME="EmpowerMeApplication Coverage Results" MODIFIED="1688826008815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.capstone.EmpowerMe.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java$EmpwrMeApplicationTests_canCreateCategory.ic" NAME="EmpwrMeApplicationTests.canCreateCategory Coverage Results" MODIFIED="1687621768103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.final_project.EmpwrMe.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java$EmpwrMeApplicationTests_canCreateAffirmation.ic" NAME="EmpwrMeApplicationTests.canCreateAffirmation Coverage Results" MODIFIED="1688559090143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.final_project.EmpwrMe.*</FILTER>
     </SUITE>
   </component>
 </project>

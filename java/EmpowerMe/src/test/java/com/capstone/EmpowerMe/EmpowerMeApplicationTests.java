@@ -1,4 +1,4 @@
-package com.final_project.EmpwrMe;
+package com.capstone.EmpowerMe;
 
 import com.capstone.EmpowerMe.models.Affirmation;
 import com.capstone.EmpowerMe.models.Category;
@@ -8,13 +8,16 @@ import com.capstone.EmpowerMe.repositories.CategoryRepository;
 import com.capstone.EmpowerMe.repositories.DiaryRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.springframework.test.context.ContextConfiguration;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @ActiveProfiles("test")
-@SpringBootTest
+@ContextConfiguration
 class EmpwrMeApplicationTests {
 
 	@Autowired
@@ -26,15 +29,15 @@ class EmpwrMeApplicationTests {
 	@Autowired
 	DiaryRepository diaryRepository;
 
+
 	@Test
 	void contextLoads() {
 	}
 
-
 	@Test
 	public void canCreateCategory(){
 		Category category = new Category("Your Journey!");
-		assertEquals("Self-Improvement", category.getTitle());
+		assertEquals("Your Journey!", category.getTitle());
 	}
 
 	@Test
@@ -62,6 +65,97 @@ class EmpwrMeApplicationTests {
 		assertTrue(category.getAffirmations().contains(affirmation));
 	}
 
+	@Test
+	public void affirmationCanAddDiary(){
+		Affirmation affirmation = new Affirmation();
+		Diary diary = new Diary("Testing diary post");
+
+		affirmation.setDiaries(new ArrayList<>());
+		affirmation.addDiary(diary);
+
+		List <Diary> expectedDiary = new ArrayList<>();
+		expectedDiary.add(diary);
+
+		assertEquals(expectedDiary, affirmation.getDiaries());
+	}
+
+	@Test
+	public void categoryCanAddAffirmation(){
+		Category category = new Category("Your Journey");
+		Affirmation affirmation = new Affirmation();
+
+		category.setAffirmations(new ArrayList<>());
+		category.addAffirmation(affirmation);
+
+		List <Affirmation> expectedAffirmation = new ArrayList<>();
+		expectedAffirmation.add(affirmation);
+
+		assertEquals(expectedAffirmation, category.getAffirmations());
+
+	}
+
+	@Test
+	public void diaryCanAddAffirmation(){
+		Diary diary = new Diary("Testing Diary can add affirmation");
+		Affirmation affirmation = new Affirmation();
+
+		diary.setAffirmations(new ArrayList<>());
+		diary.addAffirmation(affirmation);
+
+		List <Affirmation> expectedAffirmation = new ArrayList<>();
+		expectedAffirmation.add(affirmation);
+
+		assertEquals(expectedAffirmation, diary.getAffirmations());
+	}
+
+	@Test
+	public void canGetDiaryId(){
+		Long expectedId = 1L;
+		Diary diary = new Diary("Testing can get diary Id");
+		diary.setId(expectedId);
+		Long actualId = diary.getId();
+
+		assertEquals(expectedId, actualId);
+	}
+
+	@Test
+	public void canGetCategoryTitle(){
+		String expectedTitle = "Test Category can get title";
+		Category category = new Category(expectedTitle);
+
+		String actualTitle = category.getTitle();
+
+		assertEquals(expectedTitle, actualTitle);
+
+	}
+
+	@Test
+	public void canGetCategoryId() {
+		Long expectedId = 1L;
+		Category category = new Category();
+		category.setId(expectedId);
+
+		Long actualId = category.getId();
+
+		assertEquals(expectedId, actualId);
+	}
+
+	@Test
+	public void canGetAffirmationId(){
+		Long expectedId = 1L;
+		Affirmation affirmation = new Affirmation();
+		affirmation.setId(expectedId);
+
+		Long actualId = affirmation.getId();
+
+		assertEquals(expectedId, actualId);
+	}
 
 
 }
+
+
+
+
+
+
